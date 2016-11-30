@@ -10,12 +10,13 @@ vol=0.2;                    %triangle
 f=100;                      %basic frequency
 frad=f*6.283185299990382;   %[rad/s]
 f2=2000;                    %triangle frequency
-simtime=1/f*5;             %simulation time
+simtime=1/f*5;              %simulation time
 %sinAmp=1;
 %ramp=0;
 ramp=150*simtime*10;         %ramp coef
-ldrutu=2*(0.028+0.014);     %wire length
-Rdrutu=ldrutu*0.0144;       %wire resistance
+z=140;                       %ilosc zwojow
+ldrutu=z*2*(0.028+0.014);    %wire length
+Rdrutu=ldrutu*0.0144;        %wire resistance
 
-a=1;                        %default function coef y=ax+b
-b=0;                        %default function coef y=ax+b
+a=1;                         %default function coef y=ax+b
+b=0;                         %default function coef y=ax+b
